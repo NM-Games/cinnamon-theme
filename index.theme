@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=N&M Games Theme
+Comment=Official N&M Games Theme for Linux OSes
+Comment=Made by the N&M Games developers
+Version=v1.0
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=NM-Games
+MetacityTheme=NM-Games
+IconTheme=NM-Games
+CursorTheme=DMZ-White
+ButtonLayout=menu:minimize,maximize,close
