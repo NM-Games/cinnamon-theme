@@ -1059,7 +1059,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .flashspot { background-color: #FFFFFF; }
 
-.tile-preview, .tile-preview.snap, .tile-hud, .tile-hud.snap { border: 1px solid rgb(0,130,230); border-radius: 0; background-color: rgba(0, 0, 50, 0.9); }
+.tile-preview, .tile-preview.snap, .tile-hud, .tile-hud.snap { border: 1px solid rgb(0,130,230); border-radius: 0; background-color: rgba(0, 0, 50, 0.35); }
 
 .xkcd-box { padding: 6px; border: none; border-radius: 0; background-color: transparent; }
 
