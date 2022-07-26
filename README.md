@@ -2,15 +2,22 @@
 A Linux theme with the design of my gaming website, [N&M Games](https://nm-games.eu). Made by downloading other themes and modifying their CSS files a bit.
 
 ## Will it work?
-This theme has been designed and tested on Linux Mint. Therefore, it will certainly work on that distribution.  
-Success is not granted on other distrubutions.
+This theme has been designed and tested on Linux Mint, the Linux distro I use. Therefore, it will certainly work on that distribution.  
+Success is not granted on other distrubutions. As the README progresses, I assume that you use Linux Mint.
 
 ## Installing
-You can install the theme by cloning the repository into `~/.themes`:  
-`git clone https://github.com/ILoveAndLikePizza/NM-games-Linux-theme`
+You can install the theme by cloning the repository into your `~/.themes` folder:  
+```bash
+ILoveAndLikePizza@ILoveAndLikePizza:~/.themes$ git clone https://github.com/ILoveAndLikePizza/NM-games-Linux-theme
+```
 
 If the `~/.themes` folder does not exist, launch the *Themes* application to generate it.  
 When cloned, open *Themes* and choose *NM-games-Linux-theme* for **Window borders**, **Controls** and **Desktop**.  
+## Updating
+When you see a new commit on this repository, just pull:
+```bash
+ILoveAndLikePizza@ILoveAndLikePizza:~/.themes$ git pull
+```
 
 ## Features
 When you installed the theme correctly, it will:
