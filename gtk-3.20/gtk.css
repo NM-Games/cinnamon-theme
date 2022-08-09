@@ -2471,7 +2471,7 @@ decoration {
     padding-right: 12px;
     color: alpha(currentColor, 0.7); }
   .titlebar .titlebutton.close, .titlebar .titlebutton.maximize, .titlebar .titlebutton.minimize, .titlebar .titlebutton:not(separator) {
-    padding: 7px 14px;
+    padding: 5px 5px;
     border: none;
     color: transparent;
     background-color: transparent;
@@ -2484,59 +2484,59 @@ decoration {
     .titlebar .titlebutton.close:active, .titlebar .titlebutton.maximize:active, .titlebar .titlebutton.minimize:active, .titlebar .titlebutton:not(separator):active {
       background-color: alpha(#FFFFFF, 0.3); }
   .titlebar .titlebutton.close {
-    background-image: url("assets/close-focused.png");
+    background-image: url("../metacity-1/close.png");
     background-color: rgb(130, 0, 0); }
     .titlebar .titlebutton.close:hover {
       background-color: rgb(155, 0, 0);
-      background-image: url("assets/close-focused-active.png"); }
+      background-image: url("../metacity-1/close.png"); }
     .titlebar .titlebutton.close:active {
       background-color: rgb(155, 0, 0);
-      background-image: url("assets/close-focused-active.png"); }
+      background-image: url("../metacity-1/close.png"); }
     .titlebar .titlebutton.close:backdrop {
-      background-image: url("assets/close-unfocused.png");
+      background-image: url("../metacity-1/close.png");
       background-color: rgba(130, 0, 0, 0); }
       .titlebar .titlebutton.close:backdrop:hover {
         background-color: rgb(155, 0, 0);
-        background-image: url("assets/close-focused-active.png"); }
+        background-image: url("../metacity-1/close.png"); }
       .titlebar .titlebutton.close:backdrop:active {
         background-color: rgb(155, 0, 0);
-        background-image: url("assets/close-focused-active.png"); }
+        background-image: url("../metacity-1/close.png"); }
   .titlebar .titlebutton.minimize {
-    background-image: url("assets/minimize-focused.png"); }
+    background-image: url("../metacity-1/minimize.png"); }
     .titlebar .titlebutton.minimize:hover {
-      background-image: url("assets/minimize-focused.png"); }
+      background-image: url("../metacity-1/minimize.png"); }
     .titlebar .titlebutton.minimize:active {
-      background-image: url("assets/minimize-focused.png"); }
+      background-image: url("../metacity-1/minimize.png"); }
     .titlebar .titlebutton.minimize:backdrop {
-      background-image: url("assets/minimize-unfocused.png"); }
+      background-image: url("../metacity-1/minimize.png"); }
       .titlebar .titlebutton.minimize:backdrop:hover {
-        background-image: url("assets/minimize-focused.png"); }
+        background-image: url("../metacity-1/minimize.png"); }
       .titlebar .titlebutton.minimize:backdrop:active {
-        background-image: url("assets/minimize-focused.png"); }
+        background-image: url("../metacity-1/minimize.png"); }
   .titlebar .titlebutton.maximize {
-    background-image: url("assets/maximize-focused.png"); }
+    background-image: url("../metacity-1/maximize.png"); }
     .titlebar .titlebutton.maximize:hover {
-      background-image: url("assets/maximize-focused.png"); }
+      background-image: url("../metacity-1/maximize.png"); }
     .titlebar .titlebutton.maximize:active {
-      background-image: url("assets/maximize-focused.png"); }
+      background-image: url("../metacity-1/maximize.png"); }
     .titlebar .titlebutton.maximize:backdrop {
-      background-image: url("assets/maximize-unfocused.png"); }
+      background-image: url("../metacity-1/maximize.png"); }
       .titlebar .titlebutton.maximize:backdrop:hover {
-        background-image: url("assets/maximize-focused.png"); }
+        background-image: url("../metacity-1/maximize.png"); }
       .titlebar .titlebutton.maximize:backdrop:active {
-        background-image: url("assets/maximize-focused.png"); }
+        background-image: url("../metacity-1/maximize.png"); }
   .maximized .titlebar .titlebutton.maximize {
-    background-image: url("assets/restore-focused.png"); }
+    background-image: url("../metacity-1/restore.png"); }
     .maximized .titlebar .titlebutton.maximize:hover {
-      background-image: url("assets/restore-focused.png"); }
+      background-image: url("../metacity-1/restore.png"); }
     .maximized .titlebar .titlebutton.maximize:active {
-      background-image: url("assets/restore-focused.png"); }
+      background-image: url("../metacity-1/restore.png"); }
     .maximized .titlebar .titlebutton.maximize:backdrop {
-      background-image: url("assets/restore-unfocused.png"); }
+      background-image: url("../metacity-1/maximize.png"); }
       .maximized .titlebar .titlebutton.maximize:backdrop:hover {
-        background-image: url("assets/restore-focused.png"); }
+        background-image: url("../metacity-1/restore.png"); }
       .maximized .titlebar .titlebutton.maximize:backdrop:active {
-        background-image: url("assets/restore-focused.png"); }
+        background-image: url("../metacity-1/restore.png"); }
   .tiled .titlebar:not(headerbar), .tiled .titlebar:backdrop:not(headerbar), .maximized .titlebar:not(headerbar), .maximized .titlebar:backdrop:not(headerbar) {
     border-radius: 0; }
 

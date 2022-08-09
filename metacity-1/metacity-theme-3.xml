@@ -45,27 +45,27 @@
 
 <!-- geometries -->
 
-<frame_geometry name="normal" title_scale="medium" rounded_top_left="true" rounded_top_right="false">
+<frame_geometry name="normal" title_scale="medium" rounded_top_left="true" rounded_top_right="true">
 	<distance name="left_width" value="1" />
-	<distance name="right_width" value="1" />
+	<distance name="right_width" value="1"/>
 	<distance name="bottom_height" value="1" />
 	<distance name="left_titlebar_edge" value="1"/>
-	<distance name="right_titlebar_edge" value="1"/>
-	<distance name="title_vertical_pad" value="3"/>
+	<distance name="right_titlebar_edge" value="4"/>
+	<distance name="title_vertical_pad" value="15"/>
 	<border name="title_border" left="10" right="10" top="3" bottom="3"/>
-	<border name="button_border" left="0" right="0" top="1" bottom="0"/>
-  <distance name="button_width" value="44"/>
-  <distance name="button_height" value="30"/>
+	<border name="button_border" left="1" right="1" top="1" bottom="1"/>
+  <distance name="button_width" value="28"/>
+  <distance name="button_height" value="27"/>
 </frame_geometry>
 
-<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="true" rounded_top_right="false" parent="normal">
+<frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="true" rounded_top_right="true" parent="normal">
 </frame_geometry>
 
 <frame_geometry name="max" title_scale="medium" parent="normal" rounded_top_left="false" rounded_top_right="false">
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
 	<distance name="left_titlebar_edge" value="2"/>
-	<distance name="right_titlebar_edge" value="2"/>
+	<distance name="right_titlebar_edge" value="0"/>
 	<distance name="title_vertical_pad" value="2"/> <!--
 							This needs to be 1 less then the
 							title_vertical_pad on normal state
@@ -83,7 +83,7 @@
 	<distance name="bottom_height" value="1" />
 </frame_geometry>
 
-<frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="true" rounded_top_right="false">
+<frame_geometry name="small" title_scale="small" parent="normal" rounded_top_left="true" rounded_top_right="true">
 	<distance name="title_vertical_pad" value="7"/>
 	<distance name="left_titlebar_edge" value="1"/>
 	<distance name="right_titlebar_edge" value="1"/>
@@ -93,7 +93,7 @@
 <frame_geometry name="small_unfocused" parent="small">
 </frame_geometry>
 
-<frame_geometry name="border" has_title="false" rounded_top_left="true" rounded_top_right="false" parent="normal" >
+<frame_geometry name="border" has_title="false" rounded_top_left="true" rounded_top_right="true" parent="normal" >
 	<distance name="left_width" value="1" />
 	<distance name="right_width" value="1" />
 	<distance name="bottom_height" value="1" />
@@ -210,125 +210,125 @@
 <!--close-->
 <draw_ops name="close_focused">
   <rectangle color="C_button_close_bg_focused" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="close-focused-active.png" x="0" y="0" width="width" height="height"/>
+	<image filename="close.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="close_focused_prelight">
   <rectangle color="C_button_close_bg_hover" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="close-focused-active.png" x="0" y="0" width="width" height="height"/>
+	<image filename="close.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="close_focused_pressed">
   <rectangle color="C_button_close_bg_active" x="0" y="0" width="width" height="height" filled="true"/>
-  <image filename="close-focused-active.png" x="0" y="0" width="width" height="height"/>
+  <image filename="close.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="close_unfocused">
   <rectangle color="C_button_close_bg_unfocused" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="close-focused-active.png" x="0" y="0" width="width" height="height"/>
+	<image filename="close.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="close_unfocused_prelight">
   <rectangle color="C_button_close_bg_hover" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="close-focused-active.png" x="0" y="0" width="width" height="height"/>
+	<image filename="close.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="close_unfocused_pressed">
   <rectangle color="C_button_close_bg_active" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="close-focused-active.png" x="0" y="0" width="width" height="height"/>
+	<image filename="close.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <!--maximize-->
 <draw_ops name="maximize_focused">
   <rectangle color="C_button_bg_focused" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="maximize-unfocused.png" x="0" y="0" width="width" height="height"/>
+	<image filename="maximize.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="maximize_focused_prelight">
   <rectangle color="C_button_bg_hover" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="maximize-unfocused.png" x="0" y="0" width="width" height="height"/>
+	<image filename="maximize.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="maximize_focused_pressed">
   <rectangle color="C_button_bg_active" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="maximize-unfocused.png" x="0" y="0" width="width" height="height"/>
+	<image filename="maximize.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="maximize_unfocused">
   <rectangle color="C_button_bg_unfocused" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="maximize-unfocused.png" x="0" y="0" width="width" height="height"/>
+	<image filename="maximize.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="maximize_unfocused_prelight">
   <rectangle color="C_button_bg_hover" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="maximize-unfocused.png" x="0" y="0" width="width" height="height"/>
+	<image filename="maximize.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="maximize_unfocused_pressed">
   <rectangle color="C_button_bg_active" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="maximize-unfocused.png" x="0" y="0" width="width" height="height"/>
+	<image filename="maximize.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <!--restore-->
 <draw_ops name="unmaximize_focused">
   <rectangle color="C_button_bg_focused" x="0" y="0" width="width" height="height" filled="true"/>
-  <image filename="restore-unfocused.png" x="0" y="0" width="width" height="height"/>
+  <image filename="restore.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="unmaximize_focused_prelight">
   <rectangle color="C_button_bg_hover" x="0" y="0" width="width" height="height" filled="true"/>
-  <image filename="restore-unfocused.png" x="0" y="0" width="width" height="height"/>
+  <image filename="restore.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="unmaximize_focused_pressed">
   <rectangle color="C_button_bg_active" x="0" y="0" width="width" height="height" filled="true"/>
-  <image filename="restore-unfocused.png" x="0"  y="0" width="width" height="height"/>
+  <image filename="restore.png" x="0"  y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="unmaximize_unfocused">
   <rectangle color="C_button_bg_unfocused" x="0" y="0" width="width" height="height" filled="true"/>
-  <image filename="restore-unfocused.png" x="0" y="0" width="width" height="height"/>
+  <image filename="restore.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="unmaximize_unfocused_prelight">
   <rectangle color="C_button_bg_hover" x="0" y="0" width="width" height="height" filled="true"/>
-  <image filename="restore-unfocused.png" x="0" y="0" width="width" height="height"/>
+  <image filename="restore.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="unmaximize_unfocused_pressed">
   <rectangle color="C_button_bg_active" x="0" y="0" width="width" height="height" filled="true"/>
-  <image filename="restore-unfocused.png" x="0"  y="0" width="width" height="height"/>
+  <image filename="restore.png" x="0"  y="0" width="width" height="height"/>
 </draw_ops>
 
 <!--minimize-->
 <draw_ops name="minimize_focused">
   <rectangle color="C_button_bg_focused" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="minimize-unfocused.png" x="0" y="0" width="width" height="height"/>
+	<image filename="minimize.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="minimize_focused_prelight">
   <rectangle color="C_button_bg_hover" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="minimize-unfocused.png" x="0" y="0" width="width" height="height"/>
+	<image filename="minimize.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="minimize_focused_pressed">
   <rectangle color="C_button_bg_active" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="minimize-unfocused.png" x="0" y="0" width="width" height="height"/>
+	<image filename="minimize.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="minimize_unfocused">
   <rectangle color="C_button_bg_unfocused" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="minimize-unfocused.png" x="0" y="0" width="width" height="height"/>
+	<image filename="minimize.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="minimize_unfocused_prelight">
   <rectangle color="C_button_bg_hover" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="minimize-unfocused.png" x="0" y="0" width="width" height="height"/>
+	<image filename="minimize.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <draw_ops name="minimize_unfocused_pressed">
   <rectangle color="C_button_bg_active" x="0" y="0" width="width" height="height" filled="true"/>
-	<image filename="minimize-unfocused.png" x="0" y="0" width="width" height="height"/>
+	<image filename="minimize.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
 <!--stick-->
