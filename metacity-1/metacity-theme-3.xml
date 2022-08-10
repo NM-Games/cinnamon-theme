@@ -49,7 +49,7 @@
 	<distance name="left_width" value="1" />
 	<distance name="right_width" value="1"/>
 	<distance name="bottom_height" value="1" />
-	<distance name="left_titlebar_edge" value="1"/>
+	<distance name="left_titlebar_edge" value="3"/>
 	<distance name="right_titlebar_edge" value="4"/>
 	<distance name="title_vertical_pad" value="15"/>
 	<border name="title_border" left="10" right="10" top="3" bottom="3"/>
