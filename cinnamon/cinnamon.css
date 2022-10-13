@@ -275,11 +275,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .workspace-thumbnail-indicator { outline: 0 none transparent; border: 2px solid rgb(0,130,230); }
 
-.workspace-add-button { height: 200px; width: 35px; background-image: url("assets/misc/add-workspace.svg"); transition-duration: 0.2s; }
+.workspace-add-button { height: 200px; width: 35px; background-image: url("assets/misc/new-workspace.png"); transition-duration: 0.2s; }
 
-.workspace-add-button:hover { background-image: url("assets/misc/add-workspace-hover.svg"); transition-duration: 0.2s; }
+.workspace-add-button:hover { background-image: url("assets/misc/new-workspace-bright.png"); transition-duration: 0.2s; }
 
-.workspace-add-button:active { background-image: url("assets/misc/add-workspace-active.svg"); transition-duration: 0.2s; }
+.workspace-add-button:active { background-image: url("assets/misc/new-workspace-bright.png"); transition-duration: 0.2s; }
 
 .workspace-overview-background-shade { background-color: rgba(0, 0, 0, 0.54); }
 
@@ -771,9 +771,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .grouped-window-list-thumbnail-label { padding-left: 4px; }
 
-.grouped-window-list-number-label { font-size: 0.9em; color: #FFFFFF; font-weight: 700; }
+.grouped-window-list-number-label { font-size: 0.8em; color: #FFFFFF; font-weight: 1000; margin-left: 4px; }
 
-.grouped-window-list-badge { border-radius: 256px; background-color: #000000; }
+.grouped-window-list-badge { border-radius: 256px; background-color: #000032; }
 
 .panel-top .grouped-window-list-badge { margin-top: 2px; }
 
