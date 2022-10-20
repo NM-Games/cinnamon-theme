@@ -2,9 +2,9 @@
 A Linux theme with the design of my gaming website, [N&M Games](https://nm-games.eu). Made by downloading other themes and modifying their CSS files a bit.
 
 ## Will it work?
-This theme has been designed and tested on Linux Mint 21, the Linux distribution I use. Therefore, it will certainly work on that distribution.  
-It works on Linux Mint 20.3 as well, although some small features may not work 100% properly.  
-Success is not granted on other distrubutions. As the README progresses, I assume that you use Linux Mint. Or Cinnamon. I don't know how all that stuff works :)
+This theme has been designed and tested on Linux Mint, the Linux distribution I use. Therefore, it will certainly work on that distribution.  
+It works best on Linux Mint 21, and on Linux Mint 20.3 as well, although some small features may not work 100% properly.  
+Success is not granted on other distributions. As the README progresses, I assume that you use Linux Mint. Or Cinnamon. I don't know how all that stuff works :)
 
 ## Installing
 You can install the theme by cloning the repository into your `~/.themes` folder:  
@@ -18,7 +18,7 @@ When cloned, open *Themes* and choose *NM-games-Linux-theme* for:
 - **Applications** and **Desktop** on Linux Mint 21;
 - And good luck finding it out if you have another version or distribution.  
 ## Updating
-When you see a new commit on this repository, you can update the theme by pulling first:
+When you see a new commit on this repository, you can update the theme by pulling the repository first:
 ```bash
 ILoveAndLikePizza@ILoveAndLikePizza:~/.themes/NM-games-Linux-theme$ git pull
 ```
@@ -27,7 +27,7 @@ If you see no changes, you can try *Ctrl*+*Alt*+*Backspace* to restart Cinnamon.
 
 ## Features
 When you installed the theme correctly, it will:
-- give your panel and panel menus N&M Games colors;
+- give your taskbar/panel and it's menus N&M Games colors;
 - give windows N&M Games styled title bars and close buttons;
 - give the radio buttons, checkboxes, switches and buttons another look.
 

@@ -7,17 +7,17 @@ stage { color: white; font-weight: 400; }
 
 .label-shadow { color: transparent; }
 
-.menu #notification .notification-button, .menu #notification .notification-icon-button, .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button { border-color: transparent; color: #fffffe; background-color: transparent; box-shadow: 0 0 transparent; text-shadow: none; icon-shadow: none; min-height: 2em; padding: 7px 16px 8px; border-width: 0; font-weight: 500; }
+.menu #notification .notification-button, .menu #notification .notification-icon-button, .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button { border-color: rgb(0,130,230); color: #ffffff; background-color: transparent; box-shadow: 0 0 transparent; text-shadow: none; icon-shadow: none; min-height: 2em; padding: 6px 8px; border-width: 1px; font-weight: 500; border-radius: 4px; }
 
 .menu #notification .notification-button:focus, .menu #notification .notification-icon-button:focus, .popup-menu #notification .notification-button:focus, .popup-menu #notification .notification-icon-button:focus { color: white; box-shadow: 0 0 transparent; text-shadow: none; icon-shadow: none; }
 
-.menu #notification .notification-button:hover, .menu #notification .notification-icon-button:hover, .popup-menu #notification .notification-button:hover, .popup-menu #notification .notification-icon-button:hover { border-color: transparent; color: white; background-color: rgba(207, 216, 220, 0.12); box-shadow: 0 0 transparent; text-shadow: none; icon-shadow: none; }
+.menu #notification .notification-button:hover, .menu #notification .notification-icon-button:hover, .popup-menu #notification .notification-button:hover, .popup-menu #notification .notification-icon-button:hover { border-color: rgb(0,130,230); color: white; background-color: rgb(0,30,130); box-shadow: 0 0 transparent; text-shadow: none; icon-shadow: none; }
 
-.menu #notification .notification-button:active, .menu #notification .notification-icon-button:active, .popup-menu #notification .notification-button:active, .popup-menu #notification .notification-icon-button:active { border-color: transparent; color: #FFFFFF; background-color: rgba(207, 216, 220, 0.25); box-shadow: 0 0 transparent; text-shadow: none; icon-shadow: none; }
+.menu #notification .notification-button:active, .menu #notification .notification-icon-button:active, .popup-menu #notification .notification-button:active, .popup-menu #notification .notification-icon-button:active { border-color: rgb(0,130,230); color: #FFFFFF; background-color: rgb(0,30,130); box-shadow: 0 0 transparent; text-shadow: none; icon-shadow: none; }
 
-.menu #notification .notification-button:insensitive, .menu #notification .notification-icon-button:insensitive, .popup-menu #notification .notification-button:insensitive, .popup-menu #notification .notification-icon-button:insensitive { border-color: transparent; color: rgba(207, 216, 220, 0.2436); background-color: transparent; box-shadow: 0 0 transparent; text-shadow: none; icon-shadow: none; }
+.menu #notification .notification-button:insensitive, .menu #notification .notification-icon-button:insensitive, .popup-menu #notification .notification-button:insensitive, .popup-menu #notification .notification-icon-button:insensitive { border-color: rgb(0,130,230); color: rgba(207, 216, 220, 0.2436); background-color: #000035; box-shadow: 0 0 transparent; text-shadow: none; icon-shadow: none; }
 
-.menu #notification .notification-button, .menu #notification .notification-icon-button, .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button { border-radius: 2px; }
+.menu #notification .notification-button, .menu #notification .notification-icon-button, .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button { border-radius: 4px; }
 
 .calendar-event-button { border-color: transparent; color: #fffffe; background-color: transparent; box-shadow: 0 0 transparent; text-shadow: none; icon-shadow: none; font-size: 1em; padding: 5px 10px; text-align: left; border-width: 0; }
 
@@ -411,7 +411,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .notification-with-image { min-height: 159px; color: white; }
 
-.notification-button, .notification-icon-button { padding: 5px; }
+.notification-button, .notification-icon-button { padding: 0px 5px; background-color: rgb(0,0,90); }
+.notification-button:hover, .notification-icon-button:hover { background-color: rgb(0,30,130); }
+.notification-button:focus, .notification-icon-button:focus { background-color: rgb(0,30,130); }
+.notification-button:active, .notification-icon-button:active { background-color: rgb(0,30,130); }
 
 .notification-icon-button > StIcon { icon-size: 36px; }
 
