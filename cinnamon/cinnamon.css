@@ -75,17 +75,17 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .check-box StLabel { font-weight: 500; }
 
-.check-box StBin { width: 16px; height: 16px; background-image: url("assets/checkbox/checkbox-unchecked.svg"); }
+.check-box StBin { width: 16px; height: 16px; background-image: url("../gtk-3.20/assets/checkbox-unchecked@2.png"); }
 
-.check-box:checked StBin { background-image: url("assets/checkbox/checkbox-checked.svg"); }
+.check-box:checked StBin { background-image: url("../gtk-3.20/assets/checkbox-checked@2.png"); }
 
 .radiobutton CinnamonGenericContainer { height: 26px; spacing: 0.2em; padding-top: 2px; }
 
 .radiobutton StLabel { font-size: 0.9em; padding-top: 4px; }
 
-.radiobutton StBin { width: 16px; height: 16px; background-image: url("assets/checkbox/radiobutton-unchecked.svg"); }
+.radiobutton StBin { width: 16px; height: 16px; background-image: url("../gtk-3.20/assets/radio-unchecked@2.png"); }
 
-.radiobutton:checked StBin { background-image: url("assets/checkbox/radiobutton-checked.svg"); }
+.radiobutton:checked StBin { background-image: url("../gtk-3.20/assets/radio-checked@2.png"); }
 
 .toggle-switch { width: 40px; height: 20px; background-size: contain; }
 
