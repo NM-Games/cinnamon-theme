@@ -1666,7 +1666,7 @@ headerbar, headerbar:not(.titlebar) {
           border-color: shade(#FFFFFF, 0.2);
           background-color: mix(#191919, mix(#FFFFFF, #191919, 0.95), 0.2); }
     headerbar button:focus, headerbar button:hover:focus, headerbar button:active:focus, headerbar button:active:hover:focus, headerbar:not(.titlebar) button:focus, headerbar:not(.titlebar) button:hover:focus, headerbar:not(.titlebar) button:active:focus, headerbar:not(.titlebar) button:active:hover:focus {
-      border-color: shade(#4D4D4D, 0.7); }
+      border-color: rgb(0,30,130); }
     headerbar button:disabled, headerbar:not(.titlebar) button:disabled {
       color: mix(#FFFFFF, mix(#FFFFFF, #191919, 0.75), 0.1);
       border-color: mix(#191919, mix(#FFFFFF, #191919, 0.95), 0.6);
@@ -2382,10 +2382,10 @@ button.suggested-action {
     box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
 
 headerbar button.suggested-action {
-  border-color: shade(#4D4D4D, 0.6);
+  border-color: rgb(0,110,210);
   box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
   headerbar button.suggested-action:hover {
-    border-color: shade(#4D4D4D, 0.6);
+    border-color: rgb(0,110,210);
     box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
 
 toolbar.selection-mode {
