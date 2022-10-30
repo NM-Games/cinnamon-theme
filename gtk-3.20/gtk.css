@@ -2563,7 +2563,7 @@ decoration {
   background-color: #000032;
   border-bottom: 1px solid rgb(0,30,130); }
   .titlebar headerbar, .titlebar:not(headerbar) headerbar, headerbar.default-decoration headerbar, .csd headerbar.default-decoration headerbar, .default-decoration.titlebar:not(headerbar) headerbar, .csd .default-decoration.titlebar:not(headerbar) headerbar {
-    border-bottom: none; }
+    border-bottom: 1px solid rgb(0,30,130); }
   .titlebar:backdrop, .titlebar:not(headerbar):backdrop, headerbar.default-decoration:backdrop, .csd headerbar.default-decoration:backdrop, .default-decoration.titlebar:not(headerbar):backdrop, .csd .default-decoration.titlebar:not(headerbar):backdrop {
     background-color: #000032;
     color: #FFFFFF;
