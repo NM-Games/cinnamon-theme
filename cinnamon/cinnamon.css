@@ -187,7 +187,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel { font-size: 1em; height: 28px; width: 32px; color: #FFF; background-color: rgba(0,0,50,.9); font-weight: 700; }
 
-#panel:highlight { background-color: rgb(230, 30, 230); }
+#panel:highlight { background-color: rgba(230, 30, 230, .75); }
 
 #panelLeft, .panelLeft { spacing: 4px; }
 
@@ -724,7 +724,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .window-list-box.vertical { padding: 6px 0 0 0; }
 
-.window-list-box:highlight { background-color: rgb(230, 30, 230); }
+.window-list-box:highlight { background-color: rgba(230, 30, 230, .75); }
 
 .window-list-item-box { border: 0 none transparent; border-image: none; background-image: none; background-color: rgba(0, 0, 0, 0.01); color: white; box-shadow: 0 0 transparent; font-weight: 400; }
 
@@ -852,7 +852,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .spacer-box { border: 1px solid transparent; }
 
-.spacer-box:highlight { background-color: rgb(230, 30, 230); }
+.spacer-box:highlight { background-color: rgba(230, 30, 230, .75); }
 
 .spacer-box.edit-mode { border: 1px symbolic; }
 
@@ -976,7 +976,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .applet-box:hover, .applet-box:checked { color: #FFFFFF; background-color: rgba(0, 0, 0, 0.01); }
 
-.applet-box:highlight { background-color: rgb(230, 30, 230); }
+.applet-box:highlight { background-color: rgba(230, 30, 230, .75); }
 
 .panel-top .applet-box { padding: 0 6px; spacing: 2px; }
 
@@ -1024,7 +1024,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .photoframe-box { padding: 12px; padding-bottom: 16px; background-color: #000032; color: white; border: 2px solid rgb(0,30,130); }
 
-.photoframe-box:highlight { background-color: rgb(230, 30, 230); }
+.photoframe-box:highlight { background-color: rgba(230, 30, 230, .75); }
 
 .about-content { width: 550px; height: 250px; spacing: 8px; padding-bottom: 10px; }
 

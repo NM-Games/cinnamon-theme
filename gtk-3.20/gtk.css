@@ -1493,19 +1493,18 @@ switch {
   margin: 4px;
   margin-left: -3px;
   margin-right: -3px;
-  border: 3px solid #FFFFFF;
   border-radius: 4px;
-  background-color: transparent;
-  min-width: 42px; }
+  background-color: #8c8c8c;
+  min-width: 40px; }
   switch:checked {
-    border-color: #00821E;
-    background-color: #00821E;
+    border-color: #0082e6;
+    background-color: #0082e6;
     box-shadow: none; }
     switch:checked:disabled {
-      border-color: mix(#00821E, mix(#FFFFFF, #191919, 0.95), 0.4); }
+      border-color: mix(#0082e6, mix(#FFFFFF, #191919, 0.95), 0.4); }
     switch:checked:backdrop {
-      border-color: shade(#00821E, 0.9);
-      background-color: shade(#00821E, 0.9); }
+      border-color: shade(#0082e6, 0.9);
+      background-color: shade(#0082e6, 0.9); }
   switch:disabled {
     border-color: mix(#FFFFFF, #191919, 0.5); }
     switch:disabled:backdrop {
@@ -1513,15 +1512,13 @@ switch {
   switch:backdrop {
     border-color: #FFFFFF; }
   switch slider {
-    min-width: 12px;
-    min-height: 12px;
-    margin: 3px;
+    min-width: 8px;
+    min-height: 16px;
+    margin: 2px;
     border: none;
     border-radius: 3px;
     color: #FFFFFF;
-    background-color: #FFFFFF;
-    margin-left: 4px;
-    margin-right: 4px; }
+    background-color: #FFFFFF; }
   switch:checked slider {
     background-color: #FFFFFF; }
   switch:checked:disabled slider {
