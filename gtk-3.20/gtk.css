@@ -2564,7 +2564,7 @@ decoration {
   .titlebar:backdrop, .titlebar:not(headerbar):backdrop, headerbar.default-decoration:backdrop, .csd headerbar.default-decoration:backdrop, .default-decoration.titlebar:not(headerbar):backdrop, .csd .default-decoration.titlebar:not(headerbar):backdrop {
     background-color: #000032;
     color: #FFFFFF;
-    border-bottom-color: rgb(0,30,130) }
+    border-bottom: 1px solid rgb(0,30,130); }
 
 messagedialog .background.csd {
   border-radius: 0px 0px 0 0;
