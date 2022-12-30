@@ -970,9 +970,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .applet-separator { padding: 1px 4px; }
 
-.applet-separator-line { width: 1px; background: rgb(0,130,230); }
+.applet-separator-line { width: 1px; background: rgb(0,30,130); }
 
-.applet-separator-line-vertical { height: 1px; background: rgb(0,130,230); }
+.applet-separator-line-vertical { height: 1px; background: rgb(0,30,130); }
 
 .applet-box { color: white; text-shadow: none; text-align: center; }
 
