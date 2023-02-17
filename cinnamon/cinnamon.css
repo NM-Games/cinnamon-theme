@@ -291,7 +291,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .workspace-close-button:active, .window-close:active { height: 36px; width: 36px; background-image: url("assets/misc/x-bright.png"); background-size: 36px; }
 
-.window-close-area { width: 400px; height: 120px; background-image: url("assets/misc/trash-icon.svg"); }
+.window-close-area { width: 400px; height: 120px; background-image: url("assets/misc/trash.png"); }
 
 .overview-icon { padding: 9px; border: none; border-radius: 2px; color: white; transition-duration: 0.2s; text-align: center; }
 
