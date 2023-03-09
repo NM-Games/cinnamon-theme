@@ -890,7 +890,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .panel-left .workspace-switcher, .panel-right .workspace-switcher { padding-top: 3px; padding-bottom: 3px; }
 
-.workspace-button { width: 1.2em; height: 1em; padding: 0 2px; color: white; background-color: rgba(0, 0, 0, 0.01); transition-duration: 0.2s; }
+.workspace-button { width: 1.2em; height: 1em; padding: 0 2px; color: rgb(0,130,230); background-color: rgba(0, 0, 0, 0.01); transition-duration: 0.2s; }
 
 .vertical .workspace-button { width: 1em; height: 1.2em; padding: 2px 0; }
 
@@ -902,7 +902,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .panel-right .workspace-button:hover { box-shadow: inset -2px 0 0 rgb(0,130,230); }
 
-.workspace-button:outlined, .workspace-button:outlined:shaded { color: rgb(0,130,230); }
+.workspace-button:outlined, .workspace-button:outlined:shaded { color: white; }
 
 .workspace-button:shaded { color: rgba(207, 216, 220, 0.54); }
 
