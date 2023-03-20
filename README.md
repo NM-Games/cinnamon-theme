@@ -41,7 +41,7 @@ When you installed the theme correctly, it will:
 ### Not included
 The following things are **not** included in the theme, but can be done as well to give it the full N&M Games look:
 - The N&M Games font family, Balsamiq Sans. You can download that [here](https://fonts.google.com/specimen/Balsamiq+Sans);
-- The N&M Games icon for the bottom left menu. You can download that [here](https://nm-games.eu/media/icon.png);
+- The N&M Games icon for the bottom left menu. You can download that [here](https://nm-games.eu/static/img/nm/icon.png);
 - Folder icons. We recommend to set that to *Mint-Y-Dark-Blue* (Mint 21 and lower) or *Mint-Y-Legacy-Dark-Blue* (Mint 21.1) to blend in with the N&M Games colors.
 
 We hope you enjoy the N&M Games Linux Theme!
