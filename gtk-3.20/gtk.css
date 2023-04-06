@@ -680,7 +680,7 @@ image {
     background-color: transparent; }
 
 .terminal-screen, terminal-window, vte-terminal {
-  background-color: #252525;
+  background-color: #323232;
   color: #FFFFFF; }
 
 .dnd {
@@ -757,7 +757,7 @@ menu, .menu {
   border-radius: 4px;
   border-style: solid;
   color: #FFFFFF;
-  background-color: rgb(64, 64, 64); }
+  background-color: rgb(56, 56, 56); }
   .csd menu, .csd .menu {
     padding: 4px 0px;
     border-radius: 0px;
@@ -781,11 +781,11 @@ menubar, .menubar {
   -GtkWidget-window-dragging: true;
   padding: 0;
   border-style: none;
-  background-color: rgb(56, 56, 56);
+  background-color: rgb(43, 43, 43);
   color: #FFFFFF; }
   menubar:backdrop, .menubar:backdrop {
     color: #FFFFFF;
-    background-color: rgb(56, 56, 56); }
+    background-color: rgb(43, 43, 43); }
 
 menubar > menuitem, .menubar > menuitem {
   padding: 4px 8px;
@@ -810,7 +810,7 @@ menu menuitem, .menu menuitem {
   border: none;
   border-radius: 3px;
   color: #FFFFFF;
-  background-color: rgb(64, 64, 64); }
+  background-color: rgb(56, 56, 56); }
   menu menuitem:hover, .menu menuitem:hover {
     color: #FFFFFF;
     background-color: #4D4D4D; }
@@ -1742,7 +1742,7 @@ toolbar {
       .primary-toolbar button:active:backdrop, .primary-toolbar button:checked:backdrop, .primary-toolbar .raised button:active:backdrop, .primary-toolbar .raised button:checked:backdrop {
         color: #FFFFFF;
         border-color: shade(rgb(64, 64, 64), 0.85);
-        background-color: shade(rgb(64, 64, 64), 0.85); }
+        background-color: shade(#4D4D4D, 0.85); }
       .primary-toolbar button:active:disabled, .primary-toolbar button:checked:disabled, .primary-toolbar .raised button:active:disabled, .primary-toolbar .raised button:checked:disabled {
         color: mix(#FFFFFF, mix(#FFFFFF, rgb(64, 64, 64), 0.75), 0.1);
         border-color: mix(rgb(64, 64, 64), mix(#FFFFFF, rgb(64, 64, 64), 0.95), 0.6);
@@ -1764,7 +1764,7 @@ toolbar {
     .primary-toolbar button:backdrop, .primary-toolbar .raised button:backdrop {
       border-color: shade(#FFFFFF, 0.2);
       color: #FFFFFF;
-      background-color: rgb(64, 64, 64); }
+      background-color: rgb(50, 50, 50); }
 
 .inline-toolbar {
   padding: 3px;
@@ -2109,10 +2109,11 @@ treeview {
 filechooser.csd.background, filechooser placessidebar list, .nautilus-window.csd.background, .nautilus-window placessidebar list, .nemo-window.csd.background, .nemo-window placessidebar list {
   background-color: rgb(64, 64, 64); }
 filechooser .sidebar, .nautilus-window .sidebar, .nemo-window .sidebar {
-  background-color: rgb(64, 64, 64); }
+  background-color: rgb(56, 56, 56); }
   filechooser .sidebar .view:not(:selected), filechooser .sidebar iconview, .nautilus-window .sidebar .view:not(:selected), .nautilus-window .sidebar iconview, .nemo-window .sidebar .view:not(:selected), .nemo-window .sidebar iconview {
     border: none;
     color: #FFFFFF;
+    padding: 2px 0;
     background-color: transparent; }
   filechooser .sidebar frame > border, filechooser .sidebar .frame, .nautilus-window .sidebar frame > border, .nautilus-window .sidebar .frame, .nemo-window .sidebar frame > border, .nemo-window .sidebar .frame {
     border: none; }
