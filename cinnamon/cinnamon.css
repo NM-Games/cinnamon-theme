@@ -71,21 +71,21 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .popup-slider-menu-item, .slider { height: 16px; min-width: 15em; border: 0 solid transparent; border-right-width: 3px; border-left-width: 3px; color: rgb(0,130,230); -slider-height: 2px; -slider-background-color: rgb(0,0,90); -slider-border-color: transparent; -slider-active-background-color: rgb(0,130,230); -slider-active-border-color: transparent; -slider-border-width: 0; -slider-handle-radius: 8px; }
 
-.check-box CinnamonGenericContainer { spacing: 0.2em; min-height: 30px; padding-top: 2px; }
+.check-box CinnamonGenericContainer { spacing: 0.2em; min-height: 16px; padding-top: 2px; }
 
 .check-box StLabel { font-weight: 500; }
 
-.check-box StBin { width: 16px; height: 16px; background-image: url("../gtk-3.20/assets/checkbox-unchecked@2.png"); }
+.check-box StBin { width: 16px; height: 16px; background-image: url("../gtk-3.20/assets/checkbox-unchecked.png"); image-rendering: pixelated; }
 
-.check-box:checked StBin { background-image: url("../gtk-3.20/assets/checkbox-checked@2.png"); }
+.check-box:checked StBin { background-image: url("../gtk-3.20/assets/checkbox-checked.png"); image-rendering: pixelated; }
 
-.radiobutton CinnamonGenericContainer { height: 26px; spacing: 0.2em; padding-top: 2px; }
+.radiobutton CinnamonGenericContainer { height: 16px; spacing: 0.2em; padding-top: 2px; }
 
 .radiobutton StLabel { font-size: 0.9em; padding-top: 4px; }
 
-.radiobutton StBin { width: 16px; height: 16px; background-image: url("../gtk-3.20/assets/radio-unchecked@2.png"); }
+.radiobutton StBin { width: 16px; height: 16px; background-image: url("../gtk-3.20/assets/radio-unchecked.png"); image-rendering: pixelated; }
 
-.radiobutton:checked StBin { background-image: url("../gtk-3.20/assets/radio-checked@2.png"); }
+.radiobutton:checked StBin { background-image: url("../gtk-3.20/assets/radio-checked.png"); image-rendering: pixelated; }
 
 .toggle-switch { width: 40px; height: 20px; background-size: contain; }
 
@@ -138,9 +138,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
     border-right-width: 0;
 }
 
-.popup-menu, .menu, .popup-combo-menu { min-width: 0; padding: 0; background-color: rgb(0, 0, 50); color: #fffffe; }
+.popup-menu, .menu, .popup-combo-menu { min-width: 0; padding: 0 6px; border: 1px solid rgb(0,0,90); background-color: rgb(0, 0, 50); color: #fffffe; }
 
-.popup-menu-arrow, .menu-arrow, .popup-combo-menu-arrow { icon-size: 16px; }
+.popup-menu-arrow, .menu-arrow, .popup-combo-menu-arrow { icon-size: 18px; }
 
 .popup-menu .popup-sub-menu, .menu .popup-sub-menu, .popup-combo-menu .popup-sub-menu { min-width: 0; background-gradient-direction: none; background-color: rgb(0,0,90); box-shadow: 0 0 transparent; }
 
@@ -150,10 +150,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .popup-menu .popup-menu-content, .menu .popup-menu-content, .popup-combo-menu .popup-menu-content { padding: 0.6em 2px 0.66em; }
 
-.popup-menu .popup-menu-item, .menu .popup-menu-item, .popup-combo-menu .popup-menu-item { padding: 0.5em 1.75em; spacing: 1em; border-width: 0 1px; color: #fffffe; }
+.popup-menu .popup-menu-item, .menu .popup-menu-item, .popup-combo-menu .popup-menu-item { padding: 0.2em 0.55em; spacing: 1em; border-width: 0 1px; color: #fffffe; border-radius: 4px; }
 .menu .popup-menu-item { background-color: rgb(0,0,50); border: 2px solid transparent; }
 
-.popup-menu .popup-menu-item:active, .menu .popup-menu-item:active, .popup-combo-menu .popup-menu-item:active { color: white; background-color: rgb(0,0,90); }
+.popup-menu .popup-menu-item:active, .menu .popup-menu-item:active, .popup-combo-menu .popup-menu-item:active { color: white; background-color: rgb(0,30,130); }
 
 .popup-menu .popup-menu-item:insensitive, .menu .popup-menu-item:insensitive, .popup-combo-menu .popup-menu-item:insensitive { color: rgba(207, 216, 220, 0.28); background: none; }
 
@@ -163,7 +163,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .popup-menu .popup-inactive-menu-item:insensitive, .menu .popup-inactive-menu-item:insensitive, .popup-combo-menu .popup-inactive-menu-item:insensitive { color: rgba(207, 216, 220, 0.28); }
 
-.popup-menu-icon, .menu-icon, .popup-combo-menu-icon { icon-size: 16px; }
+.popup-menu-icon, .menu-icon, .popup-combo-menu-icon { icon-size: 18px; }
 
 .popup-menu-boxpointer { -arrow-border-radius: 0; -arrow-background-color: transparent; -arrow-border-width: 0; -arrow-border-color: transparent; -arrow-base: 0; -arrow-rise: 0; -arrow-box-shadow: 0 0 transparent; margin: 0.4em 0.5em 0.5em; border-radius: 2px; border-top: 1px solid #29353b; background-color: #000032; box-shadow: 0 4.5px 5.5px rgba(0, 0, 0, 0.38); }
 
