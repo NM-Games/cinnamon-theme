@@ -2871,11 +2871,11 @@ UnityPanelWidget, .unity-panel {
 /* text color for entries, views and content in general */
 @define-color theme_text_color #FFFFFF;
 /* widget base background color */
-@define-color theme_bg_color rgb(64, 64, 64);
+@define-color theme_bg_color rgb(56, 56, 56);
 /* text widgets and the like base background color */
 @define-color theme_base_color rgb(64, 64, 64);
 /* base background color of selections */
-@define-color theme_selected_bg_color #4D4D4D;
+@define-color theme_selected_bg_color rgb(0, 130, 230);
 /* text/foreground color of selections */
 @define-color theme_selected_fg_color #FFFFFF;
 /* base background color of insensitive widgets */
