@@ -1091,9 +1091,9 @@ progressbar {
   progressbar progress {
     border: none;
     border-radius: 0px;
-    background-image: linear-gradient(45deg, rgb(0, 130, 230), rgb(230, 30, 230)); }
+    background-image: linear-gradient(to right, rgb(0, 130, 230), rgb(230, 30, 230)); }
     progressbar progress:backdrop {
-      background-image: linear-gradient(45deg, rgb(0, 130, 230), rgb(230, 30, 230)); }
+      background-image: linear-gradient(to right, rgb(0, 130, 230), rgb(230, 30, 230)); }
   progressbar trough {
     border: 1px solid shade(shade(#FFFFFF, 0.2), 0.85);
     border-radius: 0px;
