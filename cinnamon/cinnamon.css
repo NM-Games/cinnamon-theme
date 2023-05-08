@@ -792,25 +792,25 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .panel-top .grouped-window-list-item-box StIcon, .panel-top .grouped-window-list-item-box StBin, .panel-bottom .grouped-window-list-item-box StIcon, .panel-bottom .grouped-window-list-item-box StBin, .panel-left .grouped-window-list-item-box StIcon, .panel-left .grouped-window-list-item-box StBin, .panel-right .grouped-window-list-item-box StIcon, .panel-right .grouped-window-list-item-box StBin { padding: 0; }
 
-.panel-top .grouped-window-list-item-box { spacing: 0; width: 44px; padding: 0; border: 0 none transparent; border-image: none; background-color: rgba(0, 0, 0, 0.01); box-shadow: 0 0 transparent; }
+.panel-top .grouped-window-list-item-box { spacing: 0; min-width: 44px; padding: 0; border: 0 none transparent; border-image: none; background-color: rgba(0, 0, 0, 0.01); box-shadow: 0 0 transparent; }
 
 .panel-top .grouped-window-list-item-box:active, .panel-top .grouped-window-list-item-box:checked { background-color: rgba(0, 0, 0, 0.01); box-shadow: inset 0 2px rgba(207, 216, 220, 0.4); }
 
 .panel-top .grouped-window-list-item-box:focus, .panel-top .grouped-window-list-item-box:active:focus, .panel-top .grouped-window-list-item-box:focus:hover, .panel-top .grouped-window-list-item-box:active:focus:hover { background-color: rgba(0, 0, 0, 0.01); box-shadow: inset 0 3px rgb(0,130,230); }
 
-.panel-bottom .grouped-window-list-item-box { spacing: 0; width: 44px; padding: 0; border: 0 none transparent; border-image: none; background-color: rgba(0, 0, 0, 0.01); box-shadow: 0 0 transparent; }
+.panel-bottom .grouped-window-list-item-box { spacing: 0; min-width: 44px; padding: 0; border: 0 none transparent; border-image: none; background-color: rgba(0, 0, 0, 0.01); box-shadow: 0 0 transparent; }
 
 .panel-bottom .grouped-window-list-item-box:active, .panel-bottom .grouped-window-list-item-box:checked { background-color: rgba(0, 0, 0, 0.01); box-shadow: inset 0 -2px rgba(207, 216, 220, 0.4); }
 
 .panel-bottom .grouped-window-list-item-box:focus, .panel-bottom .grouped-window-list-item-box:active:focus, .panel-bottom .grouped-window-list-item-box:focus:hover, .panel-bottom .grouped-window-list-item-box:active:focus:hover { background-color: rgba(0, 0, 0, 0.01); box-shadow: inset 0 -3px rgb(0,130,230); }
 
-.panel-left .grouped-window-list-item-box { spacing: 0; width: 44px; padding: 0; border: 0 none transparent; border-image: none; background-color: rgba(0, 0, 0, 0.01); box-shadow: 0 0 transparent; }
+.panel-left .grouped-window-list-item-box { spacing: 0; min-width: 44px; padding: 0; border: 0 none transparent; border-image: none; background-color: rgba(0, 0, 0, 0.01); box-shadow: 0 0 transparent; }
 
 .panel-left .grouped-window-list-item-box:active, .panel-left .grouped-window-list-item-box:checked { background-color: rgba(0, 0, 0, 0.01); box-shadow: inset 2px 0 rgba(207, 216, 220, 0.4); }
 
 .panel-left .grouped-window-list-item-box:focus, .panel-left .grouped-window-list-item-box:active:focus, .panel-left .grouped-window-list-item-box:focus:hover, .panel-left .grouped-window-list-item-box:active:focus:hover { background-color: rgba(0, 0, 0, 0.01); box-shadow: inset 3px 0 rgb(0,130,230); }
 
-.panel-right .grouped-window-list-item-box { spacing: 0; width: 44px; padding: 0; border: 0 none transparent; border-image: none; background-color: rgba(0, 0, 0, 0.01); box-shadow: 0 0 transparent; }
+.panel-right .grouped-window-list-item-box { spacing: 0; min-width: 44px; padding: 0; border: 0 none transparent; border-image: none; background-color: rgba(0, 0, 0, 0.01); box-shadow: 0 0 transparent; }
 
 .panel-right .grouped-window-list-item-box:active, .panel-right .grouped-window-list-item-box:checked { background-color: rgba(0, 0, 0, 0.01); box-shadow: inset -2px 0 rgba(207, 216, 220, 0.4); }
 
