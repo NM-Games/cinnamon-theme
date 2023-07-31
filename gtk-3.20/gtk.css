@@ -681,7 +681,7 @@ image {
     background-color: transparent; }
 
 .terminal-screen, terminal-window, vte-terminal {
-  background-color: #323232;
+  background-color: #1F1F1F;
   color: #FFFFFF; }
 
 .dnd {
