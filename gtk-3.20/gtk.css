@@ -708,6 +708,8 @@ arrow, combobox arrow {
 popover.background.touch-selection, .csd popover.background.touch-selection {
   font: initial; }
 
+popover label { padding: 2px; }
+
 .monospace {
   font-family: Monospace; }
 
