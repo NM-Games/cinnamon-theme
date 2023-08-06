@@ -2477,7 +2477,7 @@ decoration {
     color: alpha(currentColor, 0.7); }
 	.titlebar .title:backdrop, .titlebar .subtitle:backdrop { color: #999; }
   .titlebar .titlebutton.close, .titlebar .titlebutton.maximize, .titlebar .titlebutton.minimize, .titlebar .titlebutton:not(separator) {
-    padding: 5px 7px;
+    padding: 2px 4px;
     border: none;
     border-radius: 4px;
     color: transparent;
@@ -2560,7 +2560,7 @@ decoration {
     border-radius: 0; }
 
 .titlebar, .titlebar:not(headerbar), headerbar.default-decoration, .csd headerbar.default-decoration, .default-decoration.titlebar:not(headerbar), .csd .default-decoration.titlebar:not(headerbar) {
-  min-height: 32px;
+  min-height: 24px;
   color: #FFFFFF;
   background-color: #000032;
   border-bottom: 1px solid rgb(0,30,130); }
