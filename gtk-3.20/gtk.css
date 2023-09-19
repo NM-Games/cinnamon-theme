@@ -1678,7 +1678,10 @@ headerbar, headerbar:not(.titlebar) {
       color: #FFFFFF;
       border-color: rgb(0,0,50);
       background-color: rgb(0,0,30); }
-    headerbar entry, headerbar:not(.titlebar) entry {
+    headerbar entry, headerbar:not(.titlebar) entry, headerbar entry:focus {
+    background-color: rgb(0, 0, 50);
+    border: 1px solid rgb(0, 130, 230);
+    border-radius: 4px;
     padding: 4px 8px; }
 
 toolbar {
