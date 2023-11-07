@@ -179,11 +179,11 @@ button {
     background-color: shade(#4D4D4D, 1.02); }
   button:active, button:checked {
     color: #FFFFFF;
-    border-color: shade(#4D4D4D, 0.8);
+    border-color: shade(#FFFFFF, 0.2);
     background-color: shade(#4D4D4D, 0.6); }
     button:active:backdrop, button:checked:backdrop {
       color: #FFFFFF;
-      border-color: shade(rgb(64, 64, 64), 0.85);
+      border-color: shade(#FFFFFF, 0.2);
       background-color: shade(rgb(64, 64, 64), 0.85); }
     button:active:disabled, button:checked:disabled {
       color: mix(#FFFFFF, mix(#FFFFFF, rgb(64, 64, 64), 0.75), 0.1);
@@ -208,21 +208,25 @@ button {
     color: #FFFFFF;
     background-color: rgb(64, 64, 64); }
   button.flat {
-    border-color: transparent;
-    border-radius: 0px;
+    border-color: shade(#FFFFFF, 0.2);
+    border-radius: 4px;
     color: #FFFFFF;
-    background-color: transparent; }
-    button.flat:disabled {
-      border-color: transparent;
+    background-color: rgb(64, 64, 64); }
+    button.flat:hover, button.flat:hover:backdrop {
+      background-color: shade(#4D4D4D, 1.02); }
+    button.flat:active, button.flat:active:backdrop {
+      background-color: shade(#4D4D4D, 0.6); }
+    button.flat:disabled, button.flat:disabled:backdrop {
+      border-color: shade(#FFFFFF, 0.2);;
       color: alpha(#FFFFFF, 0.8);
-      background-color: transparent; }
+      background-color: mix(#FFFFFF, rgb(64, 64, 64), 0.98);; }
       button.flat:disabled:backdrop {
-        border-color: transparent;
+        border-color: shade(#FFFFFF, 0.2);;
         color: alpha(#FFFFFF, 0.7);
-        background-color: transparent; }
+        background-color: mix(#FFFFFF, rgb(64, 64, 64), 0.98);; }
     button.flat:backdrop {
-      border-color: transparent;
-      background-color: transparent;
+      border-color: shade(#FFFFFF, 0.2);
+      background-color: rgb(64, 64, 64);
       color: #FFFFFF; }
 
 checkbutton, radiobutton {
@@ -1400,28 +1404,28 @@ separator {
     -GtkWidget-window-dragging: true;
     margin-top: 4px;
     margin-bottom: 4px;
-    background-color: mix(rgb(64, 64, 64), #FFFFFF, 0.2); }
+    background-color: rgb(0, 0, 90); }
     headerbar separator:backdrop {
-      background-color: mix(rgb(64, 64, 64), #FFFFFF, 0.1); }
+      background-color: rgb(0, 0, 90); }
   headerbar button separator {
-    border-color: mix(rgb(64, 64, 64), #FFFFFF, 0.2); }
+    border-color: rgb(0, 0, 90); }
     headerbar button separator:backdrop {
-      border-color: mix(rgb(64, 64, 64), #FFFFFF, 0.1); }
+      border-color: rgb(0, 0, 90); }
   .titlebar separator, .titlebar:not(headerbar) > separator, .titlebar separator.titlebutton, .titlebar:not(headerbar) > separator.titlebutton {
     -GtkWidget-window-dragging: true;
-    background-color: mix(rgb(64, 64, 64), #FFFFFF, 0.2); }
+    background-color: rgb(0, 0, 90); }
     .titlebar separator:backdrop, .titlebar:not(headerbar) > separator:backdrop, .titlebar separator.titlebutton:backdrop, .titlebar:not(headerbar) > separator.titlebutton:backdrop {
-      background-color: mix(rgb(64, 64, 64), #FFFFFF, 0.1); }
+      background-color: rgb(0, 0, 90); }
   headerbar separator.titlebutton, .titlebar:not(headerbar) separator.titlebutton {
     min-width: 1px;
     min-height: 1px;
-    background-color: mix(rgb(64, 64, 64), #FFFFFF, 0.2); }
+    background-color: rgb(0, 0, 90); }
     headerbar separator.titlebutton:backdrop, .titlebar:not(headerbar) separator.titlebutton:backdrop {
-      background-color: mix(rgb(64, 64, 64), #FFFFFF, 0.1); }
+      background-color: rgb(0, 0, 90); }
   .titlebutton button separator, .titlebutton separator.titlebutton {
-    border-color: mix(rgb(64, 64, 64), #FFFFFF, 0.2); }
+    border-color: rgb(0, 0, 90); }
     .titlebutton button separator:backdrop, .titlebutton separator.titlebutton:backdrop {
-      border-color: mix(rgb(64, 64, 64), #FFFFFF, 0.1); }
+      border-color: rgb(0, 0, 90); }
   menu separator {
     background-color: shade(#FFFFFF, 0.23); }
   menuitem separator {
@@ -1644,7 +1648,7 @@ headerbar, headerbar:not(.titlebar) {
     font-style: italic;
     color: alpha(currentColor, 0.7); }
   headerbar button, headerbar:not(.titlebar) button {
-    padding: 3px;
+    padding: 3px 6px;
     border-style: solid;
     border-width: 1px;
     border-radius: 4px;
@@ -1652,6 +1656,10 @@ headerbar, headerbar:not(.titlebar) {
     border-color: rgb(0,30,130);
     background-color: #000032; }
     headerbar button:hover, headerbar:not(.titlebar) button:hover {
+      color: #FFFFFF;
+      border-color: rgb(0,30,130);
+      background-color: rgb(0,30,130); }
+    headerbar button:hover:backdrop, headerbar:not(.titlebar) button:hover:backdrop {
       color: #FFFFFF;
       border-color: rgb(0,30,130);
       background-color: rgb(0,30,130); }
@@ -1683,15 +1691,19 @@ headerbar, headerbar:not(.titlebar) {
         background-color: rgb(0,0,30); }
     headerbar button:backdrop, headerbar:not(.titlebar) button:backdrop {
       color: #FFFFFF;
-      border-color: rgb(0,0,50);
-      background-color: rgb(0,0,30); }
-    headerbar entry, headerbar:not(.titlebar) entry {
+      border-color: rgb(0,30,130);
+      background-color: #000032; }
+    headerbar entry, headerbar:not(.titlebar) entry, headerbar entry:backdrop, headerbar:not(.titlebar) entry:backdrop {
     background-color: rgb(0, 0, 50);
     border: 1px solid rgb(0,30,130);
     border-radius: 4px;
     padding: 4px 8px; }
     headerbar entry:focus {
       border: 1px solid rgb(0, 130, 230); }
+    headerbar entry:disabled, headerbar:not(.titlebar) entry:disabled, headerbar entry:disabled:backdrop, headerbar:not(.titlebar) entry:disabled:backdrop {
+      color: mix(#FFFFFF, mix(#FFFFFF, rgb(64, 64, 64), 0.75), 0.1);
+      border-color: rgb(0,0,50);
+      background-color: rgb(0,0,30); }  
 
 toolbar {
   padding: 4px;
@@ -1705,21 +1717,26 @@ toolbar {
     color: mix(#FFFFFF, rgb(64, 64, 64), 0.5);
     background-color: mix(#FFFFFF, rgb(64, 64, 64), 0.95); }
   toolbar button.flat {
-    border-color: transparent;
-    border-radius: 0px;
+    margin: 2px;
+    border-color: shade(#FFFFFF, 0.2);
+    border-radius: 3px;
     color: #FFFFFF;
-    background-color: transparent; }
+    background-color: rgb(64, 64, 64); }
+    toolbar button.flat:hover, toolbar button.flat:hover:backdrop {
+      background-color: shade(#4D4D4D, 1.02); }
+    toolbar button.flat:active, toolbar button.flat:active:backdrop, toolbar button.flat:checked, toolbar button.flat:checked:backdrop {
+      background-color: shade(#4D4D4D, 0.6); }
     toolbar button.flat:disabled {
-      border-color: transparent;
+      border-color: shade(#FFFFFF, 0.2);
       color: alpha(#FFFFFF, 0.8);
-      background-color: transparent; }
+      background-color: rgb(64, 64, 64); }
       toolbar button.flat:disabled:backdrop {
-        border-color: transparent;
+        border-color: shade(#FFFFFF, 0.2);
         color: alpha(#FFFFFF, 0.7);
-        background-color: transparent; }
+        background-color: rgb(64, 64, 64); }
     toolbar button.flat:backdrop {
-      border-color: transparent;
-      background-color: transparent;
+      border-color: shade(#FFFFFF, 0.2);
+      background-color: rgb(64, 64, 64);
       color: #FFFFFF; }
   toolbar menubar {
     -GtkToolbar-button-relief: normal; }
@@ -1834,6 +1851,8 @@ toolbar {
       color: #FFFFFF;
       background-color: rgb(64, 64, 64); }
 
+.linked {
+  margin: 2px; }
 .linked button, .linked .raised button, .primary-toolbar .linked button, .primary-toolbar .linked .raised button {
   border-radius: 0;
   border-left-width: 0; }
@@ -2373,35 +2392,64 @@ searchbar {
 button.destructive-action {
   border-width: 1px;
   border-style: solid;
-  border-color: rgb(64, 64, 64);
-  border-radius: 0px;
+  border-color: shade(#FFFFFF, 0.2);
+  border-radius: 4px;
   color: mix(#FFFFFF, #820000, 0.1);
   background-color: rgb(130, 0, 0); }
-  button.destructive-action:hover {
-    border-color: rgb(64, 64, 64);
+  button.destructive-action:hover, button.destructive-action:hover:backdrop {
+    border-color: shade(#FFFFFF, 0.2);
     background-color: rgb(155, 0, 0); }
-  button.destructive-action:active {
-    border-color: rgb(64, 64, 64);
-    background-color: rgb(175, 0, 0); }
+  button.destructive-action:active, button.destructive-action:active:backdrop {
+    border-color: shade(#FFFFFF, 0.2);
+    background-color: rgb(90, 0, 0); }
+  button.destructive-action:disabled, button.destructive-action:disabled:backdrop {
+    border-color: shade(#FFFFFF, 0.2);
+    background-color: rgb(70, 0, 0); }
   button.destructive-action:backdrop {
-    border-color: rgb(64, 64, 64);
+    border-color: shade(#FFFFFF, 0.2);
     color: mix(#FFFFFF, #820000, 0.1);
     background-color: rgb(90, 0, 0); }
 
 button.suggested-action {
-  border-color: rgb(64, 64, 64);
-  background-color: rgb(0, 90, 0);
+  border-color: shade(#FFFFFF, 0.2);
+  background-color: rgb(0, 130, 0);
   box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
-  button.suggested-action:hover {
-    border-color: rgb(64, 64, 64);
-    background-color: rgb(0, 130, 0);
+  button.suggested-action:hover, button.suggested-action:hover:backdrop {
+    border-color: shade(#FFFFFF, 0.2);
+    background-color: rgb(0, 155, 0);
+    box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
+  button.suggested-action:active, button.suggested-action:active:backdrop {
+    border-color: shade(#FFFFFF, 0.2);
+    background-color: rgb(0, 90, 0);
+    box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
+  button.suggested-action:disabled, button.suggested-action:disabled:backdrop {
+    border-color: shade(#FFFFFF, 0.2);
+    background-color: rgb(0, 70, 0);
+    box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
+  button.suggested-action:backdrop {
+    border-color: shade(#FFFFFF, 0.2);
+    background-color: rgb(0, 90, 0);
     box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
 
 headerbar button.suggested-action {
-  border-color: rgb(0,110,210);
+  border-color: rgb(0, 30, 130);
+  background-color: rgb(0, 130, 0);
   box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
-  headerbar button.suggested-action:hover {
-    border-color: rgb(0,110,210);
+  headerbar button.suggested-action:hover, headerbar button.suggested-action:hover:backdrop {
+    border-color: rgb(0, 30, 130);
+    background-color: rgb(0, 155, 0);
+    box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
+  headerbar button.suggested-action:active, headerbar button.suggested-action:active:backdrop {
+    border-color: rgb(0, 30, 130);
+    background-color: rgb(0, 90, 0);
+    box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
+  headerbar button.suggested-action:disabled, headerbar button.suggested-action:disabled:backdrop {
+    border-color: rgb(0, 30, 130);
+    background-color: rgb(0, 70, 0);
+    box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
+  headerbar button.suggested-action:backdrop {
+    border-color: rgb(0, 30, 130);
+    background-color: rgb(0, 90, 0);
     box-shadow: inset 0 0 0 1px shade(#4D4D4D, 0.6); }
 
 toolbar.selection-mode {
@@ -2511,7 +2559,7 @@ decoration {
       background-color: rgb(155, 0, 0);
       background-image: url("../metacity-1/close.png"); }
     .titlebar .titlebutton.close:active {
-      background-color: rgb(155, 0, 0);
+      background-color: rgb(140, 0, 0);
       background-image: url("../metacity-1/close.png"); }
     .titlebar .titlebutton.close:backdrop {
       background-image: url("../metacity-1/close.png");
@@ -2520,7 +2568,7 @@ decoration {
         background-color: rgb(155, 0, 0);
         background-image: url("../metacity-1/close.png"); }
       .titlebar .titlebutton.close:backdrop:active {
-        background-color: rgb(155, 0, 0);
+        background-color: rgb(140, 0, 0);
         background-image: url("../metacity-1/close.png"); }
   .titlebar .titlebutton.minimize {
     background-image: url("../metacity-1/minimize.png"); }
@@ -2529,7 +2577,7 @@ decoration {
       background-color: rgb(0,30,130); }
     .titlebar .titlebutton.minimize:active {
       background-image: url("../metacity-1/minimize.png");
-      background-color: rgb(0,30,130); }
+      background-color: rgb(0, 0, 90); }
     .titlebar .titlebutton.minimize:backdrop {
       background-image: url("../metacity-1/minimize.png"); }
       .titlebar .titlebutton.minimize:backdrop:hover {
@@ -2537,7 +2585,7 @@ decoration {
         background-color: rgb(0,30,130); }
       .titlebar .titlebutton.minimize:backdrop:active {
         background-image: url("../metacity-1/minimize.png");
-        background-color: rgb(0,30,130); }
+        background-color: rgb(0, 0, 90); }
   .titlebar .titlebutton.maximize {
     background-image: url("../metacity-1/maximize.png"); }
     .titlebar .titlebutton.maximize:hover {
@@ -2545,7 +2593,7 @@ decoration {
       background-color: rgb(0,30,130); }
     .titlebar .titlebutton.maximize:active {
       background-image: url("../metacity-1/maximize.png");
-      background-color: rgb(0,30,130); }
+      background-color: rgb(0, 0, 90); }
     .titlebar .titlebutton.maximize:backdrop {
       background-image: url("../metacity-1/maximize.png"); }
       .titlebar .titlebutton.maximize:backdrop:hover {
@@ -2553,7 +2601,7 @@ decoration {
         background-color: rgb(0,30,130); }
       .titlebar .titlebutton.maximize:backdrop:active {
         background-image: url("../metacity-1/maximize.png");
-        background-color: rgb(0,30,130); }
+        background-color: rgb(0, 0, 90); }
   .maximized .titlebar .titlebutton.maximize {
     background-image: url("../metacity-1/restore.png"); }
     .maximized .titlebar .titlebutton.maximize:hover {
@@ -2561,7 +2609,7 @@ decoration {
       background-color: rgb(0,30,130); }
     .maximized .titlebar .titlebutton.maximize:active {
       background-image: url("../metacity-1/restore.png");
-      background-color: rgb(0,30,130); }
+      background-color: rgb(0, 0, 90); }
     .maximized .titlebar .titlebutton.maximize:backdrop {
       background-image: url("../metacity-1/restore.png"); }
       .maximized .titlebar .titlebutton.maximize:backdrop:hover {
@@ -2569,7 +2617,7 @@ decoration {
         background-color: rgb(0,30,130); }
       .maximized .titlebar .titlebutton.maximize:backdrop:active {
         background-image: url("../metacity-1/restore.png");
-        background-color: rgb(0,30,130); }
+        background-color: rgb(0, 0, 90); }
   .tiled .titlebar:not(headerbar), .tiled .titlebar:backdrop:not(headerbar), .maximized .titlebar:not(headerbar), .maximized .titlebar:backdrop:not(headerbar) {
     border-radius: 0; }
 
