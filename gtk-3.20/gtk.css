@@ -208,26 +208,26 @@ button {
     color: #FFFFFF;
     background-color: rgb(64, 64, 64); }
   button.flat {
-    border-color: shade(#FFFFFF, 0.2);
+    border-color: transparent;
     border-radius: 4px;
     color: #FFFFFF;
-    background-color: rgb(64, 64, 64); }
+    background-color: transparent; }
     button.flat:hover, button.flat:hover:backdrop {
       background-color: shade(#4D4D4D, 1.02); }
     button.flat:active, button.flat:active:backdrop {
-      background-color: shade(#4D4D4D, 0.6); }
+      background-color: rgb(64, 64, 64); }
     button.flat:disabled, button.flat:disabled:backdrop {
-      border-color: shade(#FFFFFF, 0.2);;
+      border-color: shade(#FFFFFF, 0.2);
       color: alpha(#FFFFFF, 0.8);
       background-color: mix(#FFFFFF, rgb(64, 64, 64), 0.98);; }
       button.flat:disabled:backdrop {
         border-color: shade(#FFFFFF, 0.2);;
         color: alpha(#FFFFFF, 0.7);
         background-color: mix(#FFFFFF, rgb(64, 64, 64), 0.98);; }
-    button.flat:backdrop {
-      border-color: shade(#FFFFFF, 0.2);
-      background-color: rgb(64, 64, 64);
-      color: #FFFFFF; }
+  button.flat:backdrop {
+    border-color: transparent;
+    color: #FFFFFF;
+    background-color: transparent; }
 
 checkbutton, radiobutton {
   padding: 4px;
@@ -1718,26 +1718,26 @@ toolbar {
     background-color: mix(#FFFFFF, rgb(64, 64, 64), 0.95); }
   toolbar button.flat {
     margin: 2px;
-    border-color: shade(#FFFFFF, 0.2);
+    border-color: transparent;
     border-radius: 3px;
     color: #FFFFFF;
-    background-color: rgb(64, 64, 64); }
+    background-color: transparent; }
     toolbar button.flat:hover, toolbar button.flat:hover:backdrop {
       background-color: shade(#4D4D4D, 1.02); }
     toolbar button.flat:active, toolbar button.flat:active:backdrop, toolbar button.flat:checked, toolbar button.flat:checked:backdrop {
-      background-color: shade(#4D4D4D, 0.6); }
-    toolbar button.flat:disabled {
-      border-color: shade(#FFFFFF, 0.2);
-      color: alpha(#FFFFFF, 0.8);
       background-color: rgb(64, 64, 64); }
+    toolbar button.flat:disabled {
+      border-color: transparent;
+      color: alpha(#FFFFFF, 0.8);
+      background-color: transparent; }
       toolbar button.flat:disabled:backdrop {
-        border-color: shade(#FFFFFF, 0.2);
-        color: alpha(#FFFFFF, 0.7);
-        background-color: rgb(64, 64, 64); }
+        border-color: transparent;
+        color: alpha(#FFFFFF, 0.8);
+        background-color: transparent; }
     toolbar button.flat:backdrop {
-      border-color: shade(#FFFFFF, 0.2);
-      background-color: rgb(64, 64, 64);
-      color: #FFFFFF; }
+      border-color: transparent;
+      color: #FFFFFF;
+      background-color: transparent; }
   toolbar menubar {
     -GtkToolbar-button-relief: normal; }
 
