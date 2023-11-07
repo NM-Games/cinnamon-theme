@@ -1851,8 +1851,6 @@ toolbar {
       color: #FFFFFF;
       background-color: rgb(64, 64, 64); }
 
-.linked {
-  margin: 2px; }
 .linked button, .linked .raised button, .primary-toolbar .linked button, .primary-toolbar .linked .raised button {
   border-radius: 0;
   border-left-width: 0; }
