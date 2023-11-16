@@ -908,26 +908,29 @@ notebook {
   notebook > stack:not(:only-child) {
     background-color: rgb(64, 64, 64); }
   notebook tab {
-    padding: 6px 20px;
+    padding: 4px 16px;
     border-width: 1px;
     border-style: solid;
     border-radius: 0;
     border-color: shade(#FFFFFF, 0.2);
+    transition: 100ms ease;
     color: mix(#FFFFFF, rgb(64, 64, 64), 0.3);
     background-color: shade(rgb(64, 64, 64), 0.97); }
-    notebook tab:hover {
-      background-color: #4D4D4D; }
+    notebook tab:hover, notebook tab:backdrop:hover {
+      background-color: #444; }
     notebook tab:checked {
       border-color: shade(#FFFFFF, 0.2);
-      background-color: rgb(64, 64, 64);
+      background-color: rgb(86, 86, 86);
       color: #FFFFFF; }
       notebook tab:checked:hover {
-        background-color: rgb(64, 64, 64); }
-      notebook tab:checked:backdrop {
+        background-color: rgb(86, 86, 86); }
+        notebook tab:checked:backdrop {
         border-color: shade(#FFFFFF, 0.2);
-        background-color: rgb(64, 64, 64); }
+        background-color: rgb(86, 86, 86); }
     notebook tab:backdrop {
       background-color: shade(rgb(64, 64, 64), 0.97); }
+    notebook tab button.flat {
+      padding: 2px 6px; }
   notebook > header {
     padding-top: 2px;
     background-color: rgb(64, 64, 64); }
@@ -1450,6 +1453,8 @@ spinbutton.horizontal {
     border: none;
     border-radius: 3px 0px 0px 3px;
     padding: 7px 15px; }
+  spinbutton.horizontal entry:focus {
+    border-color: rgb(0, 130, 230); }
   spinbutton.horizontal button.up {
     border-width: 0;
     border-radius: 0px 3px 3px 0px;
@@ -1469,8 +1474,10 @@ spinbutton.horizontal {
 spinbutton.vertical entry {
   border-radius: 0px;
   padding: 7px 15px; }
-spinbutton.vertical entry:hover, spinbutton.vertical entry:focus {
+spinbutton.vertical entry:hover {
   border-color: shade(#FFFFFF, 0.2); }
+spinbutton.vertical entry:focus {
+  border-color: rgb(0, 130, 230);}
 spinbutton.vertical button.up {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
@@ -1479,6 +1486,10 @@ spinbutton.vertical button.down {
   border-top-width: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0; }
+spinbutton button:not(:disabled):hover, spinbutton:not(:disabled):hover:backdrop, spinbutton button:not(:disabled):active:hover, spinbutton:not(:disabled):active:hover:backdrop {
+  background-color: shade(#4D4D4D, 1.02); }
+spinbutton button:not(:disabled):focus, spinbutton:not(:disabled):active {
+  background-color: mix(rgb(64, 64, 64), mix(#FFFFFF, rgb(64, 64, 64), 0.95), 0.2); }
 
 @keyframes spin {
   to {
