@@ -818,7 +818,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .panel-top .grouped-window-list-item-box:hover, .panel-bottom .grouped-window-list-item-box:hover, .panel-left .grouped-window-list-item-box:hover, .panel-right .grouped-window-list-item-box:hover,
 .panel-top .grouped-window-list-item-box:active:hover, .panel-bottom .grouped-window-list-item-box:active:hover, .panel-left .grouped-window-list-item-box:active:hover, .panel-right .grouped-window-list-item-box:active:hover,
-.panel-top .grouped-window-list-item-box:active:focus:hover, .panel-bottom .grouped-window-list-item-box:active:focus:hover, .panel-left .grouped-window-list-item-box:active:focus:hover, .panel-right .grouped-window-list-item-box:active:focus:hover { background-color: rgba(0,30,130,.75) !important; }
+.panel-top .grouped-window-list-item-box:active:focus:hover, .panel-bottom .grouped-window-list-item-box:active:focus:hover, .panel-left .grouped-window-list-item-box:active:focus:hover, .panel-right .grouped-window-list-item-box:active:focus:hover { background-color: rgba(0,30,130,.75) !important; transition: 100ms ease !important; }
 
 .grouped-window-list-item-box StLabel { font-weight: 400; }
 
@@ -976,14 +976,14 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .applet-box { color: white; text-shadow: none; text-align: center; }
 
-.applet-box:hover, .applet-box:checked { color: #FFFFFF; background-color: rgba(0, 0, 0, 0.01); }
+.applet-box:hover, .applet-box:checked { color: #FFFFFF; background-color: rgba(0,30,130,.37); }
 
 .applet-box:highlight { background-color: rgba(230, 30, 230, .75); }
 
 .panel-top .applet-box { padding: 0 6px; spacing: 2px; }
 
 
-.panel-top .applet-box:hover, .panel-bottom .applet-box:hover, .panel-left .applet-box:hover, .panel-right .applet-box:hover {background-color: rgba(0,30,130,.75);}
+.panel-top .applet-box:hover, .panel-bottom .applet-box:hover, .panel-left .applet-box:hover, .panel-right .applet-box:hover {background-color: rgba(0,30,130,.75); transition: 100ms ease !important; }
 
 .panel-bottom .applet-box { padding: 0 6px; spacing: 2px; }
 
