@@ -1154,3 +1154,103 @@ StBin.popup-menu StBoxLayout.switcher-list .item-box > StButton:rtl, StBin.menu 
 
 StBin.popup-menu StBoxLayout.switcher-list .item-box > StBin.thumbnail, StBin.menu StBoxLayout.switcher-list .item-box > StBin.thumbnail { margin: 6px; }
 .menu-selected-app-box {}
+
+
+.dialog .dialog-button, .dialog .dialog-button:destructive-action, .dialog .dialog-button:default {
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgb(0, 0, 90);
+  color: #e1e1e1;
+  background-color: rgb(0, 0, 90); }
+  .dialog .dialog-button:hover, .dialog .dialog-button:focus {
+    border: 1px solid rgb(0, 30, 130);
+    color: #e1e1e1;
+    background-color: rgb(0, 30, 130); }
+  .dialog .dialog-button:active {
+    border: 1px solid rgb(0, 130, 230);
+    color: #e1e1e1;
+    background-color: rgb(0, 130, 230); }
+  .dialog .dialog-button:checked {
+    border: 1px solid rgb(0, 130, 230);
+    color: #e1e1e1;
+    background-color: rgb(0, 130, 230); }
+  .dialog .dialog-button:insensitive {
+    border: 1px solid #00001e;
+    color: rgba(225, 225, 225, 0.5);
+    background-color: #00001e; }
+
+.dialog .dialog-button:default {
+  border: 1px solid #0c75de;
+  color: #e1e1e1;
+  background-color: #0c75de; }
+  .dialog .dialog-button:focus:default {
+    border: 1px solid #0c75de;
+    color: #e1e1e1;
+    background-color: #0c75de; }
+  .dialog .dialog-button:hover:default {
+    border: 1px solid #0c75de;
+    color: #e1e1e1;
+    background-color: #2a8ff3; }
+  .dialog .dialog-button:active:default {
+    border: 1px solid #0c75de;
+    color: #e1e1e1;
+    background-color: #1182f2; }
+  .dialog .dialog-button:checked:default {
+    border: 1px solid #0c75de;
+    color: #e1e1e1;
+    background-color: #1182f2; }
+  .dialog .dialog-button:insensitive:default {
+    border-color: #000032;
+    border: 1px solid #000032;
+    color: rgba(225, 225, 225, 0.5);
+    background-color: #000020; }
+
+.dialog .dialog-button:destructive-action {
+  border: 1px solid rgb(130, 0, 0);
+  color: #e1e1e1;
+  background-color: rgb(130, 0, 0); }
+  .dialog .dialog-button:hover:destructive-action, .dialog .dialog-button:focus:destructive-action {
+    border: 1px solid rgb(130, 0, 0);
+    color: #e1e1e1;
+    background-color: rgb(165, 0, 0); }
+  .dialog .dialog-button:active:destructive-action {
+    border: 1px solid rgb(130, 0, 0);
+    color: #e1e1e1;
+    background-color: rgb(200, 0, 0); }
+  .dialog .dialog-button:checked:destructive-action {
+    border: 1px solid rgb(130, 0, 0);
+    color: #e1e1e1;
+    background-color: rgb(200, 0, 0); }
+  .dialog .dialog-button:insensitive:destructive-action {
+    border: 1px solid rgb(50, 0, 0);
+    color: rgba(225, 225, 225, 0.5);
+    background-color: rgb(50, 0, 0); }
+
+.dialog {
+  background-color: #000032;
+  border-radius: 8px;
+  border: 1px solid #000032;
+  padding: 18px; }
+  .dialog .dialog-content-box {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    spacing: 32px;
+    max-width: 28em; }
+  .dialog .confirm-dialog-title {
+    text-align: center; }
+
+.dialog-list {
+  spacing: 18px; }
+  .dialog-list .dialog-list-title {
+    text-align: center; }
+  .dialog-list .dialog-list-scrollview {
+    max-height: 200px; }
+  .dialog-list .dialog-list-box {
+    spacing: 1em; }
+    .dialog-list .dialog-list-box .dialog-list-item {
+      spacing: 1em; }
+      .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-title {
+        font-weight: bold; }
+      .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description {
+        color: #d4d4d4; }
