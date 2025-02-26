@@ -1254,3 +1254,64 @@ StBin.popup-menu StBoxLayout.switcher-list .item-box > StBin.thumbnail, StBin.me
         font-weight: bold; }
       .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description {
         color: #d4d4d4; }
+
+
+.workspace-switch-osd, .info-osd, .media-keys-osd {
+  background-color: #000032;
+  border: 1px solid #000032;
+  border-radius: 24px;
+  text-align: center;
+  padding: 24px; }
+
+.media-keys-osd {
+  margin-bottom: 1em;
+  border-radius: 24px;
+  font-weight: bold;
+  spacing: 12px;
+  padding: 12px 24px; }
+  .media-keys-osd > * {
+    spacing: 12px; }
+  .media-keys-osd StIcon {
+    icon-size: 32px; }
+  .media-keys-osd StLabel:ltr {
+    margin-right: 6px; }
+  .media-keys-osd StLabel:rtl {
+    margin-left: 6px; }
+  .media-keys-osd .level {
+    min-width: 160px;
+    -barlevel-height: 6px;
+    -barlevel-background-color: #303030;
+    -barlevel-active-background-color: #e1e1e1;
+    -barlevel-amplify-color: #F27835;
+    -barlevel-amplify-separator-width: 3px; }
+    .media-keys-osd .level:ltr {
+      margin-right: 6px; }
+    .media-keys-osd .level:rtl {
+      margin-left: 6px; }
+  .media-keys-osd .level-bar {
+    border-radius: 20px;
+    background-color: #e1e1e1; }
+
+.info-osd {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center; }
+
+.workspace-switch-osd {
+  min-width: 140px;
+  margin-bottom: 1em;
+  border-radius: 24px;
+  font-weight: bold;
+  padding: 12px 36px 0 36px; }
+  .workspace-switch-osd-indicator-box {
+    spacing: 12px; }
+  .workspace-switch-osd-indicator {
+    background-color: rgb(0, 30, 130);
+    padding: 3px;
+    margin: 15px;
+    border-radius: 36px; }
+    .workspace-switch-osd-indicator:active {
+      background-color: rgb(0, 130, 230);
+      padding: 6px;
+      margin: 12px; }
+
