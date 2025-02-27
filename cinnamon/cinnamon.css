@@ -1289,9 +1289,9 @@ StBin.popup-menu StBoxLayout.switcher-list .item-box > StBin.thumbnail, StBin.me
   .media-keys-osd .level {
     min-width: 160px;
     -barlevel-height: 6px;
-    -barlevel-background-color: #303030;
+    -barlevel-background-color: rgb(0, 30, 130);
     -barlevel-active-background-color: #fff;
-    -barlevel-amplify-color: #F27835;
+    -barlevel-amplify-color: rgb(130, 0, 0);
     -barlevel-amplify-separator-width: 3px; }
     .media-keys-osd .level:ltr {
       margin-right: 6px; }
