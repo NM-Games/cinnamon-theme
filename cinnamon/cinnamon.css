@@ -1161,19 +1161,19 @@ StBin.popup-menu StBoxLayout.switcher-list .item-box > StBin.thumbnail, StBin.me
   padding: 12px;
   border-radius: 8px;
   border: 1px solid rgb(0, 0, 90);
-  color: #e1e1e1;
+  color: #fff;
   background-color: rgb(0, 0, 90); }
   .dialog .dialog-button:hover, .dialog .dialog-button:focus {
     border: 1px solid rgb(0, 30, 130);
-    color: #e1e1e1;
+    color: #fff;
     background-color: rgb(0, 30, 130); }
   .dialog .dialog-button:active {
     border: 1px solid rgb(0, 130, 230);
-    color: #e1e1e1;
+    color: #fff;
     background-color: rgb(0, 130, 230); }
   .dialog .dialog-button:checked {
     border: 1px solid rgb(0, 130, 230);
-    color: #e1e1e1;
+    color: #fff;
     background-color: rgb(0, 130, 230); }
   .dialog .dialog-button:insensitive {
     border: 1px solid #00001e;
@@ -1182,23 +1182,23 @@ StBin.popup-menu StBoxLayout.switcher-list .item-box > StBin.thumbnail, StBin.me
 
 .dialog .dialog-button:default {
   border: 1px solid #0c75de;
-  color: #e1e1e1;
+  color: #fff;
   background-color: #0c75de; }
   .dialog .dialog-button:focus:default {
     border: 1px solid #0c75de;
-    color: #e1e1e1;
+    color: #fff;
     background-color: #0c75de; }
   .dialog .dialog-button:hover:default {
     border: 1px solid #0c75de;
-    color: #e1e1e1;
+    color: #fff;
     background-color: #2a8ff3; }
   .dialog .dialog-button:active:default {
     border: 1px solid #0c75de;
-    color: #e1e1e1;
+    color: #fff;
     background-color: #1182f2; }
   .dialog .dialog-button:checked:default {
     border: 1px solid #0c75de;
-    color: #e1e1e1;
+    color: #fff;
     background-color: #1182f2; }
   .dialog .dialog-button:insensitive:default {
     border-color: #000032;
@@ -1208,19 +1208,19 @@ StBin.popup-menu StBoxLayout.switcher-list .item-box > StBin.thumbnail, StBin.me
 
 .dialog .dialog-button:destructive-action {
   border: 1px solid rgb(130, 0, 0);
-  color: #e1e1e1;
+  color: #fff;
   background-color: rgb(130, 0, 0); }
   .dialog .dialog-button:hover:destructive-action, .dialog .dialog-button:focus:destructive-action {
     border: 1px solid rgb(130, 0, 0);
-    color: #e1e1e1;
+    color: #fff;
     background-color: rgb(165, 0, 0); }
   .dialog .dialog-button:active:destructive-action {
     border: 1px solid rgb(130, 0, 0);
-    color: #e1e1e1;
+    color: #fff;
     background-color: rgb(200, 0, 0); }
   .dialog .dialog-button:checked:destructive-action {
     border: 1px solid rgb(130, 0, 0);
-    color: #e1e1e1;
+    color: #fff;
     background-color: rgb(200, 0, 0); }
   .dialog .dialog-button:insensitive:destructive-action {
     border: 1px solid rgb(50, 0, 0);
@@ -1255,6 +1255,15 @@ StBin.popup-menu StBoxLayout.switcher-list .item-box > StBin.thumbnail, StBin.me
       .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description {
         color: #d4d4d4; }
 
+.message-dialog-content {
+  spacing: 18px; }
+  .message-dialog-content .message-dialog-title {
+    text-align: center; }
+  .message-dialog-content .message-dialog-description {
+    text-align: center; }
+  .message-dialog-content .message-dialog-caption {
+    text-align: center; }
+
 
 .workspace-switch-osd, .info-osd, .media-keys-osd {
   background-color: #000032;
@@ -1281,7 +1290,7 @@ StBin.popup-menu StBoxLayout.switcher-list .item-box > StBin.thumbnail, StBin.me
     min-width: 160px;
     -barlevel-height: 6px;
     -barlevel-background-color: #303030;
-    -barlevel-active-background-color: #e1e1e1;
+    -barlevel-active-background-color: #fff;
     -barlevel-amplify-color: #F27835;
     -barlevel-amplify-separator-width: 3px; }
     .media-keys-osd .level:ltr {
@@ -1290,7 +1299,7 @@ StBin.popup-menu StBoxLayout.switcher-list .item-box > StBin.thumbnail, StBin.me
       margin-left: 6px; }
   .media-keys-osd .level-bar {
     border-radius: 20px;
-    background-color: #e1e1e1; }
+    background-color: #fff; }
 
 .info-osd {
   font-size: 1.2em;
@@ -1315,3 +1324,97 @@ StBin.popup-menu StBoxLayout.switcher-list .item-box > StBin.thumbnail, StBin.me
       padding: 6px;
       margin: 12px; }
 
+.user-icon {
+  border: 1px solid rgba(0, 0, 90);
+  border-radius: 99px; }
+.user-label {
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0px; }
+
+.prompt-dialog-password-entry, .run-dialog-entry, #menu-search-entry, .popup-menu #notification StEntry {
+  padding: 7px;
+  caret-size: 1px;
+  selection-background-color: #1f9ede;
+  selected-color: #ffffff;
+  transition-duration: 300ms;
+  border-radius: 3px;
+  color: #D3D3D3;
+  background-color: #000032;
+  border: 1px solid rgb(0, 100, 200);
+  box-shadow: inset 0 2px 4px rgba(48, 48, 48, 0.05); }
+  .prompt-dialog-password-entry:focus, .run-dialog-entry:focus, #menu-search-entry:focus, .popup-menu #notification StEntry:focus, .prompt-dialog-password-entry:hover, .run-dialog-entry:hover, #menu-search-entry:hover, .popup-menu #notification StEntry:hover {
+    color: #fff;
+    background-color: #000032;
+    border: 1px solid rgb(0, 130, 230);
+    box-shadow: inset 0 2px 4px rgba(48, 48, 48, 0.05); }
+  .prompt-dialog-password-entry:insensitive, .run-dialog-entry:insensitive, #menu-search-entry:insensitive, .popup-menu #notification StEntry:insensitive {
+    color: rgba(225, 225, 225, 0.45);
+    background-color: #00001e;
+    border-color: 1px solid #00001e;
+    box-shadow: inset 0 2px 4px rgba(42, 42, 42, 0.05); }
+  .prompt-dialog-password-entry StIcon.capslock-warning, .run-dialog-entry StIcon.capslock-warning, #menu-search-entry StIcon.capslock-warning, .popup-menu #notification StEntry StIcon.capslock-warning {
+    icon-size: 16px;
+    warning-color: #F27835;
+    padding: 0 4px; }
+  .prompt-dialog-password-entry StLabel.hint-text, .run-dialog-entry StLabel.hint-text, #menu-search-entry StLabel.hint-text, .popup-menu #notification StEntry StLabel.hint-text {
+    color: rgba(225, 225, 225, 0.3); }
+  .prompt-dialog-password-entry StIcon.peek-password, .run-dialog-entry StIcon.peek-password, #menu-search-entry StIcon.peek-password, .popup-menu #notification StEntry StIcon.peek-password {
+    icon-size: 16px;
+    color: #fff; }
+
+.prompt-dialog {
+  width: 28em; }
+  .prompt-dialog .dialog-content-box {
+    spacing: 16px;
+    margin-bottom: 12px; }
+  .prompt-dialog-password-entry {
+    width: 20em; }
+  .prompt-dialog-password-layout {
+    spacing: 8px; }
+  .prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label {
+    text-align: center; }
+  .prompt-dialog-error-label {
+    color: rgb(200, 0, 0); }
+
+.prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label, .run-dialog-description, .message-dialog-content .message-dialog-caption, .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description {
+  font-weight: 400;
+  font-size: 0.818em; }
+
+.message-dialog-content .message-dialog-title, .dialog .confirm-dialog-title {
+  font-weight: 800;
+  font-size: 1.364em; }
+
+.workspace-switch-osd, .media-keys-osd, .message-dialog-content .message-dialog-title.lightweight {
+  font-weight: 700;
+  font-size: 1.182em; }
+
+.polkit-dialog-user-combo, .dialog-list .dialog-list-title {
+  font-weight: 700;
+  font-size: 1em; }
+
+.audio-device-selection-dialog .audio-selection-box .audio-selection-device, .polkit-dialog-user-combo {
+  border: 1px solid #000032;
+  color: #fff;
+  background-color: #000032; }
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus, .polkit-dialog-user-combo:focus {
+    border: 1px solid rgb(0, 30, 130);
+    color: #fff;
+    background-color: rgb(0, 30, 130); }
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover, .polkit-dialog-user-combo:hover {
+    border: 1px solid rgb(0, 30, 130);
+    color: #fff;
+    background-color: rgb(0, 30, 130); }
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive, .polkit-dialog-user-combo:insensitive {
+    border: 1px solid #00001e;
+    color: rgba(225, 225, 225, 0.5);
+    background-color: #00001e; }
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected, .polkit-dialog-user-combo:selected, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active, .polkit-dialog-user-combo:active {
+    border: 1px solid rgb(0, 130, 230);
+    color: #fff;
+    background-color: rgb(0, 130, 230); }
+  .audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked, .polkit-dialog-user-combo:checked {
+    border: 1px solid rgb(0, 130, 230);
+    color: #fff;
+    background-color: rgb(0, 130, 230); }
