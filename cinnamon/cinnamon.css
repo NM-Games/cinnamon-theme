@@ -155,7 +155,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .popup-menu .popup-menu-item:active, .menu .popup-menu-item:active, .popup-combo-menu .popup-menu-item:active { color: white; background-color: rgb(0,30,130); }
 
-.popup-menu .popup-menu-item:insensitive, .menu .popup-menu-item:insensitive, .popup-combo-menu .popup-menu-item:insensitive { color: rgba(207, 216, 220, 0.28); background: none; }
+.popup-menu .popup-menu-item:insensitive, .menu .popup-menu-item:insensitive, .popup-combo-menu .popup-menu-item:insensitive { font-weight: bold; background: none; }
 
 .popup-menu .popup-menu-item StLabel, .menu .popup-menu-item StLabel, .popup-combo-menu .popup-menu-item StLabel { max-width: 45em; }
 
